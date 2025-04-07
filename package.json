@@ -1,8 +1,8 @@
 {
-  "name": "ari-client",
+  "name": "@ipsolution/ari-client",
   "version": "2.2.0",
-  "description": "JavaScript client for Asterisk REST Interface.",
-  "homepage": "https://github.com/asterisk/node-ari-client",
+  "description": "JavaScript client for Asterisk REST Interface. (fork IP Solution)",
+  "homepage": "https://github.com/daniloricalmeida/node-ari-client.git",
   "keywords": [
     "Asterisk",
     "ARI"
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/asterisk/node-ari-client"
+    "url": "https://github.com/daniloricalmeida/node-ari-client.git"
   },
   "bugs": {
     "url": "https://issues.asterisk.org",
