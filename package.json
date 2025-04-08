@@ -1,21 +1,22 @@
 {
-  "name": "@ipsolution/ari-client",
+  "name": "ari-client",
   "version": "2.2.0",
-  "description": "JavaScript client for Asterisk REST Interface. (fork IP Solution)",
-  "homepage": "https://github.com/daniloricalmeida/node-ari-client.git",
+  "description": "JavaScript client for Asterisk REST Interface.",
+  "homepage": "https://github.com/asterisk/node-ari-client",
   "keywords": [
     "Asterisk",
     "ARI"
   ],
   "main": "./lib/client.js",
   "scripts": {
-    "pretest": "npm run lint",
-    "test": "nyc mocha",
+    "test": "npm run lint && mocha",
+    "cover": "istanbul cover --report html _mocha",
+    "check-coverage": "npm run cover && istanbul check-coverage --lines 75 --statements 75 --functions 75 --branches 70",
     "lint": "jshint . --verbose"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/daniloricalmeida/node-ari-client.git"
+    "url": "git://github.com/asterisk/node-ari-client"
   },
   "bugs": {
     "url": "https://issues.asterisk.org",
@@ -28,7 +29,7 @@
     "bluebird": "^3.5.2",
     "lodash": "^4.17.10",
     "request": "^2.34.0",
-    "swagger-client": "3.34.4",
+    "@ipsolution/swagger-client-fork": "2.0.26",
     "uuid": "^3.0.0",
     "ws": "^6.0.0"
   },
@@ -42,11 +43,11 @@
     "grunt-jsdoc": "^2.1.0",
     "hock": "^1.3.1",
     "env-test": "^1.0.0",
+    "istanbul": "^0.4.4",
     "jshint": "^2.9.2",
     "mocha": "^5.2.0",
     "moment": "^2.6.0",
     "mustache": "^2.2.1",
-    "nyc": "^15.0.0",
     "portfinder": "^1.0.6"
   }
 }
