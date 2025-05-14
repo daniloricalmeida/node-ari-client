@@ -1,6 +1,6 @@
 {
   "name": "@ipsolution/ari-client",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "JavaScript client for Asterisk REST Interface. (fork IP Solution)",
   "homepage": "https://github.com/daniloricalmeida/node-ari-client.git",
   "keywords": [
